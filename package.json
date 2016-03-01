@@ -1,0 +1,20 @@
+{
+  "name": "ex_js_test",
+  "version": "1.0.0",
+  "description": "JavaScriptテスト環境の構築サンプル",
+  "scripts": {
+    "build": "webpack --progress --config ./webpack.config.js",
+    "watch": "webpack --watch --progress --config ./webpack.config.js",
+    "server": "lite-server --verbose",
+    "dev": "npm run watch & npm run server",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "lite-server": "^2.1.0",
+    "webpack": "^1.12.14",
+    "webpack-notifier": "^1.3.0"
+  }
+}
