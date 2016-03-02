@@ -1,6 +1,6 @@
 //var assert = require('power-assert');
 import assert from 'power-assert'
-import Cat from '../src/index'
+import Cat from '../src/cat'
 
 describe('Cat', () => {
   var tama;
