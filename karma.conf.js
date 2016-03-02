@@ -32,6 +32,27 @@ module.exports = function(config) {
       'test/**/*_test.js': ['webpack']
     },
 
+    webpack: {
+      devtool: 'inline-source-map',
+      module: {
+        loaders: [
+          {
+            test: /\.jsx?$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['es2015'],
+              plugins: ['babel-plugin-espower']
+            }
+          },
+          {
+            test: /\.json$/,
+            loader: 'json'
+          }
+        ]
+      }
+    },
+
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
