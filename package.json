@@ -7,7 +7,7 @@
     "watch": "webpack --watch --progress --config ./webpack.config.js",
     "server": "lite-server --verbose",
     "dev": "npm run watch & npm run server",
-    "test": "mocha"
+    "test": "karma start"
   },
   "devDependencies": {
     "babel-core": "^6.6.0",
